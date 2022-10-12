@@ -3,6 +3,7 @@
 Module of a Square Class
 """
 
+
 class Square:
     """ Blueprint of a square"""
 
