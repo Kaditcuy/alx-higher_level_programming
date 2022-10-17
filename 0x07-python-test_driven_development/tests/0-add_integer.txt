@@ -1,0 +1,68 @@
+============================
+The `0-add_integer.py` module
+============================
+
+Using function `add_integer()`
+-----------------------------
+
+Import the function:
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Usage
+====
+
+``add_integer(...)``` returns the addition of its two arguments. For numbers,
+that value is equivalent to using the ``+`` operator.
+
+Testing function add_integer():
+
+>>> add_integer(2,3)
+5
+
+>>> add_integer(12.3, -2)
+10
+
+>>> add_integer(-3, -2)
+-5
+
+>>> add_integer(3, -2)
+1
+
+ """The function also works with floating point numbers"""
+>>> add_integer(11.3, 2.5)
+13
+
+"""By default the second argument is 98, so the usage below works"""
+>>> add_integer(6)
+104
+
+"""Argument b must be an integer or a float"""
+>>> add_integer(6, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+"""Argument a must be an integer"""
+>>> add_integer(None, 6)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+"""Function must be called with positional arguments"""
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+"""Function will fail if infinity is provided"""
+>>> add_integer(1000e1000)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+"""Function can't convert float Nan to integer"""
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+
+"""If both arguments are non-integersand non-floats,a TypeError is raised"""
+>>> add_integer("Hello", "World")
+Traceback (most recent call last):
+TypeError: a must be an integer
