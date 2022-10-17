@@ -1,0 +1,52 @@
+================================
+The `2-matrix_divided.py` module
+================================
+
+Using function `matrix_divided`
+--------------------------------
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix = [
+...      [1, 2, 3],
+...      [1, 2, 3]
+... ]
+
+"""Function successfully  divides all elements in the list by an integer"""
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67, 1.0], [0.33, 0.67, 1.0]]
+
+"""function cant divide elements in list by 0"""
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+"""Function only takes an integer to divide elements in the list by"""
+>>> matrix_divided(matrix, None)
+Traceback (most recent call last):
+TypeError: div must be a number
+
+"""Each row of the matrix  must be equal"""
+>>> matrix = [
+...     [1,2,3,4],
+...     [4,5,6]
+... ]
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+"""Function can only divide elements in a list that are numbers"""
+>>> matrix = [
+...     [None],
+...     ['apple', 'banana']
+... ]
+>>> matrix_divided(matrix, 4)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+"""Floating points and integers can be combined together"""
+>>> matrix = [
+...     [3.14, 2.78,9.0],
+...     [4,5,6]
+... ]
+>>> matrix_divided(matrix, 6)
+[[0.52, 0.46, 1.5], [0.67, 0.83, 1.0]]
