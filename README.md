@@ -6,10 +6,4 @@ Entering the exciting world of High Level Programming, where we experience stron
  abstraction hence shorter programs. What's even more exciting is the use of an
  interpretor.
 
- This repository contains programs written in Python, C and Shell.
-
-*PROJECTS*
-
-## 1. 0x00-python-hello_world
-
-Getting started with Python. Formating output and string manipulation.
+ This repository contains programs written in Python, C and Shell and can be accessed by forking it.
