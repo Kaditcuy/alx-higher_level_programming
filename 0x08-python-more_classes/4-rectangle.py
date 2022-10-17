@@ -94,6 +94,5 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        rectangle ="Rectangle({}, {})".format(self.__width, self.__height)
+        rectangle = "Rectangle({}, {})".format(self.__width, self.__height)
         return rectangle
-
