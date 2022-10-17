@@ -21,4 +21,4 @@
 * Wrote a function that prints a text with 2 new lines after each of these characters: ., ? and :
 
 ### 5. Max integer - Unittest
-* Since the beginning I  have been creating “Interactive tests” or doctest for ther functions above. For this function, I  will write unittests for the function def max_integer(list=[]):.
+* Since the beginning I  have been creating “Interactive tests” or doctest for the functions above. For this function, I  will write unittests for the function def max_integer(list=[]):.
