@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+
 """
-Module containing function to 
+Module containing function to
 indent text, passed into the function by adding
 2 new lines after each of these characters(. ? :)
 """
+
 
 def text_indentation(text):
     """Function to indent text"""
