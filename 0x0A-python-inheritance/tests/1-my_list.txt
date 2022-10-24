@@ -119,6 +119,19 @@ The order of the original list is not altered after a call to the method.
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 
+Strings are sorted in lexographical order
+::
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append('Alx')
+>>> my_list.append('Philip')
+>>> my_list.append('Ukanwoke')
+>>> my_list.append('Inheritance')
+>>> my_list.print_sorted()
+['Alx', 'Inheritance', 'Philip', 'Ukanwoke']
+>>> print(my_list)
+['Alx', 'Philip', 'Ukanwoke', 'Inheritance']
 
 Nothing to sort with empty lists.
 
