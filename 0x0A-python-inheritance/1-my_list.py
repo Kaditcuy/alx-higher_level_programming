@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Module containing subclass Mylist
 of parent class list
