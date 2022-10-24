@@ -1,6 +1,4 @@
 #!/usr/bin/pyhton3
-
-
 """
 Module containing function to check if an object is the instance
 of a class or the class it inherits from
