@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Module that contains function
+to return all the attributes of an object.
+"""
+
 
 def lookup(obj):
     """Function to return a list of
