@@ -1,6 +1,5 @@
 #!/usr/bin/pyhton3
-"""Module 3-is_kind_of_class containins function to check if an object is the instance
-of a class or the class it inherits"""
+"""Module 3-is_kind_of_class containins function to check"""
 
 
 def is_kind_of_class(obj, a_class):
