@@ -10,6 +10,8 @@ Using integer_validator function from the BaseGeometry class
 
 	Create an instance/object of the class ::
 >>> bg = BaseGeometry()
+>>> type(bg)
+<class '7-base_geometry.BaseGeometry'>
 
 	Testing both Methods defined in BaseGeometry class ::
 >>> bg.integer_validator("height", 89)
@@ -63,13 +65,12 @@ Traceback (most recent call last):
 	...
 TypeError: age must be an integer
 
-
 >>> bg.integer_validator('age', float('nan'))
 Traceback (most recent call last):
 	...
 TypeError: age must be an integer
 
-Extra arguments
+	Extra arguments ::
 >>> bg.integer_validator('name', 34, 'eys')
 Traceback (most recent call last):
 	...
