@@ -3,6 +3,7 @@
 """Module containing class MyInt which is a subclass
 of int"""
 
+
 class MyInt(int):
     """Invert int operators == to become !=, rebel version of Int object"""
 
@@ -13,4 +14,3 @@ class MyInt(int):
     def __ne__(self, value):
         """what was == is now !="""
         return int(self) == value
-
