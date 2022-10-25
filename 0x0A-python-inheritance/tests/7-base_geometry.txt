@@ -1,0 +1,50 @@
+============================
+The '7-base_geometry' module
+============================
+
+Using integer_validator function from the BaseGeometry class
+-------------------------------------------------------------
+
+	import the class ::
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+	Create an instance/object of the class ::
+>>> bg = BaseGeometry()
+
+	Checks whether the function does its purpose which is validating an integer > 0 ::
+>>> bg.integer_validator("height", 89)
+>>> bg.integer_validator("an_int", 12)
+
+	Integer parsed to function must be > 0 ::
+>>> bg.integer_validator("weight", 0)
+Traceback (most recent call last):
+...
+ValueError: weight must be greater than 0
+
+>>> bg.integer_validator("width", -2)
+Traceback (most recent call last):
+...
+ValueError: width must be greater than 0
+
+	Function must be called with 2 positional arguments ::
+>>> bg.integer_validator("weight")
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator(None)
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+	Second argument parsed to function must be an integer ::
+>>> bg.integer_validator("weight", "alx")
+Traceback (most recent call last):
+...
+TypeError: weight must be an integer
