@@ -11,7 +11,7 @@ def to_json_string(my_obj):
     """Function to take a python object and return
     its JSON string format
 
-    Args: 
+    Args:
         Python object to encode
     Returns:
         The JSON string format
