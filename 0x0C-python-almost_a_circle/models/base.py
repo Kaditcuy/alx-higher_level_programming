@@ -72,12 +72,9 @@ class Base():
     def load_from_file(cls):
         """Returns a list of objects"""
         filename = cls.__name__ + ".json"
-        if filename is None:
+        try:
+            with open(filename, 'r') as a_file:
+                list_dicts = Base.from_json_string(a_file.read())
+                return [cls.create(**d) for d in list_dicts]
+        except IOError:
             return []
-        with open(filename, 'r') as a_file:
-            decoded_content = cls.from_json_string(a_file.read)
-
-        object_list = []
-        for i, j in enumerate(decode_contemt):
-            object_list.append(cls.create(**decoded_content[i]))
-        return object_list
