@@ -13,3 +13,6 @@ our MySql server if it doesnt exist, if the database exist the script should not
 Requirements:
 > - Dont use `SELECT` or `SHOW`
 ```
+
+### 2. Delete a database
+* Script `2-remove_database.sql` deletes a database from MySql server.
