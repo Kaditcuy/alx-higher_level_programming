@@ -10,5 +10,3 @@ module.exports = class Square extends Base {
     }
   }
 };
-Footer
-© 2022 GitHub, Inc.
