@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''
 takes in url
 sends GET request to url
